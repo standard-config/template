@@ -28,13 +28,12 @@
 	},
 	"packageManager": "pnpm@10.28.1",
 	"devDependencies": {
-		"@eslint/compat": "2.0.1",
+		"@standard-config/eslint": "1.0.0",
 		"@standard-config/prettier": "1.5.0",
 		"@standard-config/tsconfig": "2.0.0",
 		"@types/node": "^22.19.7",
 		"@vitest/coverage-v8": "4.0.18",
 		"eslint": "9.39.2",
-		"eslint-plugin-perfectionist": "5.4.0",
 		"husky": "9.1.7",
 		"jiti": "2.6.1",
 		"oxlint": "1.41.0",
@@ -43,7 +42,6 @@
 		"publint": "0.3.17",
 		"tsdown": "0.20.1",
 		"typescript": "5.9.3",
-		"typescript-eslint": "8.53.1",
 		"vitest": "4.0.18"
 	},
 	"scripts": {
