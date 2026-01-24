@@ -1,19 +1,19 @@
-[![](https://img.shields.io/npm/v/%40standard-config%2Fpackage)](https://www.npmjs.com/package/@standard-config/package)
-[![](https://img.shields.io/github/actions/workflow/status/standard-config/package/test.yaml)](https://github.com/standard-config/package/actions/workflows/test.yaml)
-[![](https://img.shields.io/codecov/c/github/standard-config/package)](https://codecov.io/github/standard-config/package)
+[![](https://img.shields.io/npm/v/%40standard-config%2Ftemplate)](https://www.npmjs.com/package/@standard-config/template)
+[![](https://img.shields.io/github/actions/workflow/status/standard-config/template/test.yaml)](https://github.com/standard-config/template/actions/workflows/test.yaml)
+[![](https://img.shields.io/codecov/c/github/standard-config/template)](https://codecov.io/github/standard-config/template)
 
-# @standard-config/package
+# @standard-config/template
 
 Use this template to create a Standard Config package.
 
 ## Install
 
 ```sh
-npm install --save-dev @standard-config/package
+npm install --save-dev @standard-config/template
 ```
 
 ```sh
-pnpm add --save-dev @standard-config/package
+pnpm add --save-dev @standard-config/template
 ```
 
 ## License
