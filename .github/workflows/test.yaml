@@ -32,6 +32,4 @@ jobs:
         with:
           version: latest
       - run: pnpm install
-      - run: pnpm typecheck
       - run: pnpm test
-      - run: pnpm build

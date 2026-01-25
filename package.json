@@ -29,7 +29,7 @@
 	"devEngines": {
 		"runtime": {
 			"name": "node",
-			"version": ">=22",
+			"version": "^24",
 			"onFail": "warn"
 		},
 		"packageManager": {
