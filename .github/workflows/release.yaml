@@ -4,9 +4,6 @@ on:
   push:
     tags:
       - '*'
-  pull_request:
-    branches:
-      - main
 
 permissions:
   contents: read
@@ -25,6 +22,6 @@ jobs:
         with:
           version: latest
       - run: pnpm install
-      - run: pnpm publish --access=public --provenance --no-git-checks --dry-run
+      - run: pnpm publish --access=public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
