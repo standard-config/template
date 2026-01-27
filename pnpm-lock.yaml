@@ -12,8 +12,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1(eslint@9.39.2(jiti@2.6.1))(prettier@3.8.1)(typescript@5.9.3)
       '@standard-config/prettier':
-        specifier: 1.6.1
-        version: 1.6.1(prettier@3.8.1)
+        specifier: 1.7.0
+        version: 1.7.0(prettier@3.8.1)
       '@standard-config/tsconfig':
         specifier: 2.0.2
         version: 2.0.2(typescript@5.9.3)
@@ -22,7 +22,7 @@ importers:
         version: 22.19.7
       '@vitest/coverage-v8':
         specifier: 4.0.18
-        version: 4.0.18(vitest@4.0.18(@types/node@22.19.7)(jiti@2.6.1))
+        version: 4.0.18(vitest@4.0.18(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2))
       eslint:
         specifier: 9.39.2
         version: 9.39.2(jiti@2.6.1)
@@ -52,7 +52,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: 4.0.18
-        version: 4.0.18(@types/node@22.19.7)(jiti@2.6.1)
+        version: 4.0.18(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2)
 
 packages:
 
@@ -822,8 +822,8 @@ packages:
       eslint: '>=9'
       typescript: '>=5'
 
-  '@standard-config/prettier@1.6.1':
-    resolution: {integrity: sha512-Of0Xncoq3yNt9ZSpQ3nQ26cVdfUJp904C6OtTA2xgvPO1OWrlcWx73+hN61JxZ9noblSkyi44Zpq1tqTELRR5g==}
+  '@standard-config/prettier@1.7.0':
+    resolution: {integrity: sha512-tP0ydiyibD7httkOdgpxndV2pGGBBZIp+zdy9YJob32jCyyTvLNmR21a2S4V9EgskZKTowLGJnl0FxvIfm7DNw==}
     engines: {node: '>=20'}
     peerDependencies:
       prettier: '>=3.7'
@@ -1802,8 +1802,8 @@ packages:
     resolution: {integrity: sha512-SxToR7P8Y2lWmv/kTzVLC1t/GDI2WGjMwNhLLE9qtH8Q13C+aEmuRlzDst4Up4s0Wc8sF2M+J57iB3cMLqftfg==}
     engines: {node: '>=6.0.0'}
 
-  prettier-plugin-expand-json@1.0.2:
-    resolution: {integrity: sha512-5ZtlA1aDpUxQ63OnKdkmVwOUEBbw0w5O8B4rCLcEOvKC0xEq1OPFeqtlh0LX18nLolmfC8BnN9pKEsv7ShyqKQ==}
+  prettier-plugin-expand-json@1.0.3:
+    resolution: {integrity: sha512-8NtMuvKO33Xeok6B+kFBdLQWTBZ9KyI5iVupkSdy5va0ljt8O7em7L6b0bdAptKd/uwIl95IQI4Y3azOSTo+QQ==}
     engines: {node: '>=20'}
     peerDependencies:
       prettier: '>=3'
@@ -1827,6 +1827,12 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       prettier: ^3.0.0
+
+  prettier-plugin-yaml@1.0.0:
+    resolution: {integrity: sha512-KgY7wHj3PwxH71v1yeQq5W0SzsOx5x23HwScfaIeNhzGjW/7CgD+wdoHbFkY2B7yyOHhZD0yS/+HSFBMxuSy0A==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      prettier: '>=3'
 
   prettier@3.8.1:
     resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
@@ -2247,6 +2253,11 @@ packages:
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
+
+  yaml@2.8.2:
+    resolution: {integrity: sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
 
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
@@ -2816,14 +2827,15 @@ snapshots:
       - prettier
       - supports-color
 
-  '@standard-config/prettier@1.6.1(prettier@3.8.1)':
+  '@standard-config/prettier@1.7.0(prettier@3.8.1)':
     dependencies:
       '@prettier/plugin-oxc': 0.1.3
       prettier: 3.8.1
-      prettier-plugin-expand-json: 1.0.2(prettier@3.8.1)
+      prettier-plugin-expand-json: 1.0.3(prettier@3.8.1)
       prettier-plugin-packagejson: 3.0.0(prettier@3.8.1)
       prettier-plugin-sh: 0.18.0(prettier@3.8.1)
       prettier-plugin-sort-json: 4.2.0(prettier@3.8.1)
+      prettier-plugin-yaml: 1.0.0(prettier@3.8.1)
       rfdc: 1.4.1
 
   '@standard-config/tsconfig@2.0.2(typescript@5.9.3)':
@@ -2945,7 +2957,7 @@ snapshots:
       '@typescript-eslint/types': 8.54.0
       eslint-visitor-keys: 4.2.1
 
-  '@vitest/coverage-v8@4.0.18(vitest@4.0.18(@types/node@22.19.7)(jiti@2.6.1))':
+  '@vitest/coverage-v8@4.0.18(vitest@4.0.18(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2))':
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
       '@vitest/utils': 4.0.18
@@ -2957,7 +2969,7 @@ snapshots:
       obug: 2.1.1
       std-env: 3.10.0
       tinyrainbow: 3.0.3
-      vitest: 4.0.18(@types/node@22.19.7)(jiti@2.6.1)
+      vitest: 4.0.18(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2)
 
   '@vitest/expect@4.0.18':
     dependencies:
@@ -2968,13 +2980,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.18(vite@7.3.1(@types/node@22.19.7)(jiti@2.6.1))':
+  '@vitest/mocker@4.0.18(vite@7.3.1(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2))':
     dependencies:
       '@vitest/spy': 4.0.18
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.1(@types/node@22.19.7)(jiti@2.6.1)
+      vite: 7.3.1(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2)
 
   '@vitest/pretty-format@4.0.18':
     dependencies:
@@ -3996,7 +4008,7 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier-plugin-expand-json@1.0.2(prettier@3.8.1):
+  prettier-plugin-expand-json@1.0.3(prettier@3.8.1):
     dependencies:
       jsonc-parser: 3.3.1
       prettier: 3.8.1
@@ -4016,6 +4028,11 @@ snapshots:
   prettier-plugin-sort-json@4.2.0(prettier@3.8.1):
     dependencies:
       prettier: 3.8.1
+
+  prettier-plugin-yaml@1.0.0(prettier@3.8.1):
+    dependencies:
+      prettier: 3.8.1
+      yaml: 2.8.2
 
   prettier@3.8.1: {}
 
@@ -4431,7 +4448,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  vite@7.3.1(@types/node@22.19.7)(jiti@2.6.1):
+  vite@7.3.1(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2):
     dependencies:
       esbuild: 0.27.2
       fdir: 6.5.0(picomatch@4.0.3)
@@ -4443,11 +4460,12 @@ snapshots:
       '@types/node': 22.19.7
       fsevents: 2.3.3
       jiti: 2.6.1
+      yaml: 2.8.2
 
-  vitest@4.0.18(@types/node@22.19.7)(jiti@2.6.1):
+  vitest@4.0.18(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2):
     dependencies:
       '@vitest/expect': 4.0.18
-      '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@22.19.7)(jiti@2.6.1))
+      '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2))
       '@vitest/pretty-format': 4.0.18
       '@vitest/runner': 4.0.18
       '@vitest/snapshot': 4.0.18
@@ -4464,7 +4482,7 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.3.1(@types/node@22.19.7)(jiti@2.6.1)
+      vite: 7.3.1(@types/node@22.19.7)(jiti@2.6.1)(yaml@2.8.2)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.19.7
@@ -4534,6 +4552,8 @@ snapshots:
   word-wrap@1.2.5: {}
 
   yallist@3.1.1: {}
+
+  yaml@2.8.2: {}
 
   yocto-queue@0.1.0: {}
 
