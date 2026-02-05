@@ -11,6 +11,9 @@ importers:
       '@standard-config/eslint':
         specifier: 1.3.0
         version: 1.3.0(eslint@9.39.2(jiti@2.6.1))(prettier@3.8.1)(typescript@5.9.3)
+      '@standard-config/oxlint':
+        specifier: 1.0.1
+        version: 1.0.1(oxlint-tsgolint@0.11.4)(oxlint@1.43.0(oxlint-tsgolint@0.11.4))
       '@standard-config/prettier':
         specifier: 1.8.1
         version: 1.8.1(prettier@3.8.1)
@@ -835,6 +838,13 @@ packages:
     peerDependencies:
       eslint: '>=9'
       typescript: '>=5'
+
+  '@standard-config/oxlint@1.0.1':
+    resolution: {integrity: sha512-3N5XAbBDBWFWTYQDmDyqk6m65ExPMLbgPxk0IH9HCzEsSKHXUm3mV9XOWWhHaZ2Rf4bLNZyd0RHp7EgITTMr5A==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      oxlint: '>=1.43'
+      oxlint-tsgolint: '>=0.11'
 
   '@standard-config/prettier@1.8.1':
     resolution: {integrity: sha512-Mpfpn631tyaMtyAeXvzdPdDr93f9c1IxXbTJLZ4mCePjoBk7ZIkavMCNxg+cUTfsleiwlz5gvghlNCyUWpsk9w==}
@@ -2869,6 +2879,12 @@ snapshots:
       - '@types/eslint'
       - prettier
       - supports-color
+
+  '@standard-config/oxlint@1.0.1(oxlint-tsgolint@0.11.4)(oxlint@1.43.0(oxlint-tsgolint@0.11.4))':
+    dependencies:
+      oxlint: 1.43.0(oxlint-tsgolint@0.11.4)
+      oxlint-tsgolint: 0.11.4
+      rfdc: 1.4.1
 
   '@standard-config/prettier@1.8.1(prettier@3.8.1)':
     dependencies:
