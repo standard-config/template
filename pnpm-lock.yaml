@@ -12,8 +12,8 @@ importers:
         specifier: 1.3.1
         version: 1.3.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       '@standard-config/oxlint':
-        specifier: 1.0.1
-        version: 1.0.1(oxlint-tsgolint@0.11.4)(oxlint@1.43.0(oxlint-tsgolint@0.11.4))
+        specifier: 1.0.2
+        version: 1.0.2(oxlint-tsgolint@0.11.4)(oxlint@1.43.0(oxlint-tsgolint@0.11.4))
       '@standard-config/prettier':
         specifier: 1.9.0
         version: 1.9.0(prettier@3.8.1)
@@ -826,12 +826,15 @@ packages:
       eslint: '>=9'
       typescript: '>=5'
 
-  '@standard-config/oxlint@1.0.1':
-    resolution: {integrity: sha512-3N5XAbBDBWFWTYQDmDyqk6m65ExPMLbgPxk0IH9HCzEsSKHXUm3mV9XOWWhHaZ2Rf4bLNZyd0RHp7EgITTMr5A==}
-    engines: {node: '>=22'}
+  '@standard-config/oxlint@1.0.2':
+    resolution: {integrity: sha512-TkefEH/+rc0uAox72F8kcbBJe2vw2CSw/zPXYDCFnQdsHt3X0vsxph5vFcr1BjLvFXmxkYgWbkdX0FiA/Mnibw==}
+    engines: {node: '>=20'}
     peerDependencies:
       oxlint: '>=1.43'
       oxlint-tsgolint: '>=0.11'
+    peerDependenciesMeta:
+      oxlint-tsgolint:
+        optional: true
 
   '@standard-config/prettier@1.9.0':
     resolution: {integrity: sha512-yI2bauKm+V+cRM+tgX+yhvAJoMz0u9xFrLudzJpImpTIQGASCVhbXbwhOPz7PFnV/Y0jwBew6d2aIXXwCwG3sQ==}
@@ -2821,11 +2824,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@standard-config/oxlint@1.0.1(oxlint-tsgolint@0.11.4)(oxlint@1.43.0(oxlint-tsgolint@0.11.4))':
+  '@standard-config/oxlint@1.0.2(oxlint-tsgolint@0.11.4)(oxlint@1.43.0(oxlint-tsgolint@0.11.4))':
     dependencies:
       oxlint: 1.43.0(oxlint-tsgolint@0.11.4)
-      oxlint-tsgolint: 0.11.4
       rfdc: 1.4.1
+    optionalDependencies:
+      oxlint-tsgolint: 0.11.4
 
   '@standard-config/prettier@1.9.0(prettier@3.8.1)':
     dependencies:
