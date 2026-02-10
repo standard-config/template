@@ -4,7 +4,7 @@
 
 # @standard-config/template
 
-Use this template to create a Standard Config package.
+Standard Config package template.
 
 ## Install
 

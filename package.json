@@ -1,7 +1,7 @@
 {
 	"name": "@standard-config/template",
 	"version": "0.0.0",
-	"description": "Use this template to create a Standard Config package",
+	"description": "Standard Config package template",
 	"license": "MIT",
 	"author": {
 		"name": "Dom Porada",
@@ -14,7 +14,7 @@
 	},
 	"keywords": [
 		"package",
-		"template"
+		"standard-config"
 	],
 	"files": [
 		"dist/**"
