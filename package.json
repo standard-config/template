@@ -33,7 +33,7 @@
 		"@standard-config/prettier": "1.9.1",
 		"@standard-config/tsconfig": "2.0.2",
 		"@types/node": "22.19.11",
-		"@vitest/coverage-v8": "4.0.18",
+		"@vitest/coverage-v8": "4.1.0-beta.3",
 		"eslint": "9.39.2",
 		"husky": "9.1.7",
 		"jiti": "2.6.1",
@@ -43,7 +43,7 @@
 		"publint": "0.3.17",
 		"tsdown": "0.20.3",
 		"typescript": "5.9.3",
-		"vitest": "4.0.18"
+		"vitest": "4.1.0-beta.3"
 	},
 	"scripts": {
 		"build": "tsdown",

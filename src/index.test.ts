@@ -1,6 +1,15 @@
 import { expect, test } from 'vitest';
-import template from './index.ts';
+import * as exports from './index.ts';
 
-test('is defined', () => {
-	expect(template).toMatchSnapshot();
+test('exposes correct public API', () => {
+	expect({ ...exports }).toStrictEqual({
+		default: expect.any(Function),
+	});
+});
+
+test('normalizes the given value', () => {
+	const standardize = exports.default;
+
+	expect(standardize('')).toBe('');
+	expect(standardize('value')).toMatchSnapshot();
 });
