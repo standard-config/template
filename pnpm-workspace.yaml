@@ -1,8 +1,5 @@
 autoInstallPeers: false
 
-minimumReleaseAgeExclude:
-  - '@standard-config/*'
-
 overrides:
   vite-plus>oxfmt: '-'
 
