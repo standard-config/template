@@ -1,8 +1,36 @@
-[![](https://img.shields.io/npm/v/%40standard-config%2Ftemplate?style=flat-square)](https://npmx.dev/package/@standard-config/template) [![](https://img.shields.io/github/actions/workflow/status/standard-config/template/test.yaml?style=flat-square)](https://github.com/standard-config/template/actions/workflows/test.yaml) [![](https://img.shields.io/codecov/c/github/standard-config/template?style=flat-square)](https://codecov.io/github/standard-config/template)
+<p align="center">
+    <a href="https://github.com/standard-config/template">
+        <img
+            src=".github/assets/standard-config-template@3x.png"
+            width="520"
+            alt=""
+        />
+    </a>
+</p>
 
-# @standard-config/template
+<h1 align="center">@standard&#8209;config/template</h1>
 
-Standard Config package template.
+<p align="center">Standard Config package&nbsp;template.</p>
+
+<p align="center">
+    <a href="https://npmx.dev/package/@standard-config/template"
+        ><img
+            src="https://img.shields.io/npm/v/%40standard-config%2Ftemplate?style=flat-square"
+            alt=""
+    /></a>
+    <a href="https://github.com/standard-config/template/actions/workflows/test.yaml"
+        ><img
+            src="https://img.shields.io/github/actions/workflow/status/standard-config/template/test.yaml?style=flat-square"
+            alt=""
+    /></a>
+    <a href="https://codecov.io/github/standard-config/template"
+        ><img
+            src="https://img.shields.io/codecov/c/github/standard-config/template?style=flat-square"
+            alt=""
+    /></a>
+</p>
+
+<div>&nbsp;</div>
 
 ## Install
 
