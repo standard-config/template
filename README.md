@@ -1,7 +1,7 @@
 <p align="center">
     <a href="https://github.com/standard-config/template">
         <img
-            src=".github/assets/standard-config-template@3x.png"
+            src="https://github.com/standard-config/.github/blob/main/.github/assets/standard-config-template@3x.png?raw=true"
             width="520"
             alt=""
         />
