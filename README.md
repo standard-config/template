@@ -2,7 +2,7 @@
     <a href="https://github.com/standard-config/template">
         <img
             src="https://github.com/standard-config/.github/blob/main/.github/assets/standard-config-template@3x.png?raw=true"
-            width="520"
+            width="500"
             alt=""
         />
     </a>
