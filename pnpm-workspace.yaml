@@ -1,7 +1,15 @@
 autoInstallPeers: false
 
+catalog:
+  oxlint: ^1.68.0
+
+color: always
+
+gitChecks: false
+
 overrides:
   vite-plus>oxfmt: '-'
+  vite-plus>oxlint: 'catalog:'
 
 peerDependencyRules:
   allowAny:
