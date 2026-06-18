@@ -1,20 +1,17 @@
 autoInstallPeers: false
 
-catalog:
-  oxlint: ^1.70.0
-
 color: always
 
 gitChecks: false
 
+minimumReleaseAge: 720
+
 overrides:
   vite-plus>oxfmt: '-'
-  vite-plus>oxlint: 'catalog:'
 
 peerDependencyRules:
   allowAny:
     - '@vitest/coverage-v8'
-    - vitest
 
 strictPeerDependencies: true
 
