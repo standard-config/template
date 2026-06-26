@@ -4,8 +4,6 @@ color: always
 
 gitChecks: false
 
-minimumReleaseAge: 720
-
 overrides:
   vite-plus>oxfmt: '-'
 
