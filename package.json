@@ -27,7 +27,7 @@
 	"engines": {
 		"node": ">=22"
 	},
-	"packageManager": "pnpm@11.11.0",
+	"packageManager": "pnpm@11.13.1",
 	"devDependencies": {
 		"@standard-config/oxlint": "^2.3.1",
 		"@standard-config/oxlint-stylistic": "^2.4.3",
