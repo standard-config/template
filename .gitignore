@@ -1,5 +1,7 @@
+.agent-*
 .DS_Store
-.vite-hooks/_
+.hooks/_
+.pnpm-store
 coverage
 dist
 node_modules
