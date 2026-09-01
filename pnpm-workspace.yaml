@@ -4,6 +4,8 @@ color: always
 
 gitChecks: false
 
+engineStrict: true
+
 minimumReleaseAgeExclude:
   - '@standard-config/*'
 
