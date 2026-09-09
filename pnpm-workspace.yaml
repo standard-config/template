@@ -4,6 +4,8 @@ color: always
 
 gitChecks: false
 
+engineStrict: true
+
 minimumReleaseAgeExclude:
   - '@standard-config/*'
 
@@ -11,6 +13,7 @@ overrides:
   vite-plus>oxfmt: '-'
   vite-plus>oxlint: latest
   vite-plus>oxlint-tsgolint: latest
+  vite: npm:@voidzero-dev/vite-plus-core@latest
 
 peerDependencyRules:
   allowAny:
