@@ -1,10 +1,12 @@
+autoDedupe: true
+
 autoInstallPeers: false
 
 color: always
 
-gitChecks: false
-
 engineStrict: true
+
+gitChecks: false
 
 minimumReleaseAgeExclude:
   - '@standard-config/*'
@@ -16,8 +18,9 @@ overrides:
   vite: npm:@voidzero-dev/vite-plus-core@latest
 
 peerDependencyRules:
-  allowAny:
-    - '@vitest/coverage-v8'
+  ignoreMissing:
+    - eslint
+    - vitest
 
 strictPeerDependencies: true
 
