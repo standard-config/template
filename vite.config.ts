@@ -2,6 +2,24 @@ import { defineOxlintConfig } from '@standard-config/oxlint';
 import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
+	test: {
+		coverage: {
+			exclude: [
+				/* prettier-ignore */
+				'**/coverage/**',
+				'**/dist/**',
+			],
+			enabled: true,
+			reporter: [
+				/* prettier-ignore */
+				'json',
+				['text', { skipFull: true }],
+			],
+			thresholds: {
+				100: true,
+			},
+		},
+	},
 	lint: defineOxlintConfig(),
 	pack: {
 		deps: {
